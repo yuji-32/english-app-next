@@ -6,8 +6,9 @@ import { Mic, Volume2 } from "lucide-react";
 import { defaultWords } from "./data/defaultWords";
 
 const API_BASE_URL =
-  process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:3001";
-
+  process.env.NEXT_PUBLIC_API_BASE_URL ||
+  "https://dictionary-server-j4k4.onrender.com";
+  
 function App() {
   const [word, setWord] = useState("");
   const [meaning, setMeaning] = useState("");
