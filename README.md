@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# English Learning App (Next.js)
 
-## Getting Started
+Reactで開発した英語学習アプリをNext.jsへ移植したバージョンです。
 
-First, run the development server:
+🔗 https://english-app-next.vercel.app/
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 概要
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+英単語学習・翻訳・AI英会話を行えるWebアプリです。
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+元々React(Vite)で開発したアプリをNext.jsへ移植し、
+App Router環境への対応やSSRを考慮した実装を行いました。
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 主な機能
 
-## Learn More
+- 英単語の登録・管理
+- 辞書候補の自動取得
+- 翻訳機能
+- AI英会話
+- 音声入力
+- 音声読み上げ
 
-To learn more about Next.js, take a look at the following resources:
+## 移植時に対応した内容
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- React(Vite) → Next.js(App Router)へ移植
+- localStorage利用時のSSR対策
+- SpeechRecognition利用時のSSR対策
+- 環境変数によるAPI切り替え
+- Vercelへのデプロイ
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 使用技術
 
-## Deploy on Vercel
+### Frontend
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Next.js
+- React
+- JavaScript
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Backend
+
+- Node.js
+- Express
+
+### API
+
+- OpenAI API
+- DeepL API
+
+### Deployment
+
+- Vercel
+- Render
