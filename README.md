@@ -1,4 +1,4 @@
-# English Learning App (Next.js)
+# 英単語学習アプリ (Next.js)
 
 Reactで開発した英語学習アプリをNext.jsへ移植したバージョンです。
 
